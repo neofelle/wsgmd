@@ -1,0 +1,343 @@
+@charset "utf-8";
+
+
+/* ----- RESET ----- */
+/*html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td*/
+html,body,div,span,applet,object,iframe,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,fieldset,form,label,legend,caption,tbody,tfoot,thead,tr{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+	
+/* ----- GLOBAL ----- */
+body {
+	background-image: url(images/bg.jpg);
+	background-repeat: repeat-x;
+	margin: 0;
+	line-height: 18px;	
+	font-family:Arial, Helvetica, sans-serif;
+
+
+}
+h1 
+{
+        font-family: Georgia, Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	font-variant:small-caps;
+	color:#103924;
+	}	
+h2 
+{
+        font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color:#103924;
+	}
+h3
+{
+    font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  
+    font-weight: bold;
+    color: #103924;
+}
+.Date
+{
+
+    color:#333333;
+    line-height:12px
+}
+
+.clear {clear:both;}
+#logo {
+	float:left;
+	margin-top:11px;
+	margin-bottom:10px;
+	margin-left:0px
+	}
+#topContent {
+	width:935px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+#nav {
+	height:42px;
+	width:584;
+	float:right;
+	margin-top:55px;
+	}
+ul li{
+	list-style-image:url(images/bullet.jpg);
+	list-style-position: outside;
+	/*margin-left: 35px;
+	margin-bottom: 5px;*/
+	}
+
+/* ----- HOME ----- */
+/*#header {
+	width:960px;
+	height:290px;
+	padding-left:25px;
+	margin: 110px auto 10px auto;
+	clear:both;
+	}*/
+	#header {
+	  background-image: url("images/headerbottomShadow.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px 30px;
+    width: 985px;
+	height: 390px;clear:both;
+	}
+	#header img {border: 12px solid #fff;}
+#headerLeft {
+	width:567px;
+	float:left;
+		height:218;
+		margin-top:2px
+	}
+#headerRight {
+	width:368px;
+	float:left;
+	height:218;
+	margin-top:1px;
+	}
+#headerShadowTop {
+	background-image:url(images/headerShadowTop.jpg);
+	background-repeat:no-repeat;
+	width:368px;
+	height:20px;
+	margin-top:15px;
+	}
+#headerShadowRight {
+	background-image:url(images/headerShadowRight.jpg);
+	width:25px;
+	height:270px;
+	float:left;
+	margin-top:20px;
+	}
+#mainContent {
+	min-height:300px;
+	width:935px;
+	margin-right:auto;
+	margin-left:auto;
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;clear:both;margin-bottom: 25px;
+}
+ a {	
+	color:#103924 ;
+	text-decoration:underline;
+	}
+ a:hover{
+	color:#666666;
+	}
+#homeLeft {
+	width: 360px;
+	float: left;
+	margin-right: 15px;
+}
+#homeMid {
+	width: 320px;
+	float: left;
+	margin-right: 10px;
+}
+#homeMid a{
+		color:#103924 ;
+	text-decoration:underline;
+	}
+#homeMid a:hover{
+	color:#666666;
+	}
+#homeRight {
+	width: 230px;
+	float: left;
+}
+.brownBox {
+	margin-bottom:10px
+	}
+.brownBoxMid{
+	background-image:url(images/boxMidBG.jpg);
+	background-repeat:repeat-x;
+	background-color: #f0e1cd;
+	padding: 15px 25px 10px 20px;
+	}
+.dbrownBoxTop {
+	background-image:url(images/homepageImageSmall.jpg);
+	background-position:top;
+	background-repeat:no-repeat;
+	padding-top:150px;
+	background-color:#d4c1a8;
+	padding-left:5px;
+	}
+
+.dbrownBoxTopInterior {
+	background-image:url(images/wsgVideoInterior.jpg);
+	background-position:top;
+	background-repeat:no-repeat;
+	padding-top:150px;
+	background-color:#d4c1a8;
+	padding-left:5px;
+	}
+
+.dbrownBoxTop img {behavior:	url(png_behavior.htc);
+	}
+.marginbottom10{
+	margin-bottom:10px;
+	}
+	
+.dbrownBoxBottom {
+	background-image:url(images/dgreyBoxBottom.jpg);
+	background-repeat:no-repeat;
+	height:31px;
+	padding-bottom:10px;
+	}
+	
+	
+/* ----- INTERIOR ----- */
+
+.interiorBG {
+	background-image:url(images/interiorBG.jpg);
+	background-repeat: repeat-x;
+	}
+#headerInterior {
+	width:960px;
+	height:218px;
+	padding-left:25px;
+	margin: 110px auto 10px auto;
+	clear:both;
+	}
+#headerLeftInterior {
+	width:566px;
+	float:left;
+	height:218px;
+	margin-top:1px
+	}
+#interiorheaderRTop {
+	background-image:url(images/interiorheaderRTop.jpg);
+	background-repeat:no-repeat;
+	width:368px;
+	height:15px;
+	margin-top:18px;
+	}
+#interiorLeft {
+	width: 660px;
+	float: left;
+	margin: 25px 45px 25px 0;
+}
+#interiorRight {
+	width: 230px;
+	float: left;
+	margin-top:85px;
+}
+#interiorRight img {
+	margin-bottom:10px;
+	}
+
+
+/* ----- FOOTER ----- */
+
+#footer {
+	width: 100%;
+	/*background-image:url(/images/footerPuzzles.jpg); 
+	background-repeat:no-repeat;*/
+	background-color:#103924;
+	background-position:center;
+	color:#FFFFFF;
+	font-size:11px;
+	}
+#footer a {	
+	color:#999999;
+	}
+#footer a:hover {	
+	color:#ffffff;
+	}
+.footerContent {
+	width:935px;
+	padding: 25px 0 25px 0;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+	/* ------- FAQ Styles ----------*/
+	
+.msg_list {
+	margin: 0px;
+	padding: 0px;
+
+}
+.msg_head {
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+   font-size: 14px;
+    font-weight: bold;
+    color: #536e83;
+	margin:1px;
+}
+
+.msg_head {
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+   font-size: 14px;
+    font-weight: bold;
+    color: #536e83;
+	margin:1px;
+}
+
+.msg_head a {
+	
+   font-size: 14px;
+    font-weight: bold;
+    color: #536e83 !important;
+    text-decoration:none !important
+
+}
+
+.msg_head a:hover {
+	
+   font-size: 14px;
+    font-weight: bold;
+    color: #536e83;
+
+}
+
+
+.msg_body {
+	padding: 5px 10px 15px;
+
+}
+
+/*--- fAQ Styles ---*/
+.msg_head
+{
+       font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  
+    font-weight: bold;
+    color: #103924;
+    }
+    
+.Date
+{
+       font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+     font-style:italic;
+    color: #313131;
+    }    
+    
+#disclaimer
+{
+    font-size:11px;
+    color:Gray;
+    width:935px;
+    padding:10px 0px 10px 0px;
+    margin-left:auto;
+	margin-right:auto;
+   
+    }    
