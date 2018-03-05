@@ -601,3 +601,10 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+# Menu
+require_once('wp-bootstrap-navwalker.php');
+function register_my_menu() {
+ register_nav_menu('my-menu',__( 'My Menu' ));
+}
+add_action( 'init', 'register_my_menu' );

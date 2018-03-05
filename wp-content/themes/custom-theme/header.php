@@ -100,7 +100,7 @@
       <link rel='stylesheet' id='main style-css'  href='<?php bloginfo('template_directory'); ?>/includes/css/w7-global.css' media='all' />
       <?php wp_head(); ?>
    </head>
-   <body class="page-template page-template-onecolumn-page page-template-onecolumn-page-php page page-id-15 desktop chrome">
+   <body class="interiorBG">
       <form method="post" action="./" id="form1">
          <div class="aspNetHidden">
             <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
@@ -144,17 +144,29 @@
             <div id="logo">
                <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" width="242" height="129" alt="logo" />
             </div>
-            <div id="nav">
+            <div id="nav">               
                <div id="RadMenu1" class="RadMenu RadMenu_WSG">
+                  <?php 
+                   $menu_args = array(
+                    'menu'    => 'MAIN-MENU',
+                    'theme_location' => 'my-menu',
+                    'depth'    => 4,
+                    'container'   => false,
+                    'menu_class'   => 'rmHorizontal rmRootGroup',
+                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                    'walker'    => new wp_bootstrap_navwalker()
+                   );
+                   //wp_nav_menu($menu_args);
+                  ?>
                   <ul class="rmHorizontal rmRootGroup">
                      <li class="rmItem rmFirst">
-                        <a href="/" class="rmLink"><span class="rmText">Home&nbsp;</span></a>
+                        <a href="<?php echo get_permalink( get_page_by_path( 'home' ) ); ?>" class="rmLink"><span class="rmText">Home&nbsp;</span></a>
                      </li>
                      <li class="rmItem rmSeparator">
                         <span class="rmText"></span>
                      </li>
                      <li class="rmItem ">
-                        <a href="/About-Us.aspx" class="rmLink"><span class="rmText">About Us&nbsp;</span></a>
+                        <a href="<?php echo get_permalink( get_page_by_path( 'about-us' ) ); ?>" class="rmLink"><span class="rmText">About Us&nbsp;</span></a>
                         <div class="rmSlide">
                            <ul class="rmVertical rmGroup rmLevel1">
                               <li class="rmItem rmFirst"><a href="/About-Us/Our-Team.aspx" class="rmLink"><span class="rmText">Our Team&nbsp;</span></a></li>
@@ -168,7 +180,7 @@
                      </li>
                      <li class="rmItem rmSeparator"><span class="rmText"></span></li>
                      <li class="rmItem ">
-                        <a href="/Services.aspx" class="rmLink"><span class="rmText">Services&nbsp;</span></a>
+                        <a href="<?php echo get_permalink( get_page_by_path( 'services' ) ); ?>" class="rmLink"><span class="rmText">Services&nbsp;</span></a>
                         <div class="rmSlide">
                            <ul class="rmVertical rmGroup rmLevel1">
                               <li class="rmItem rmFirst"><a href="/Services/Personal-Financial-Planning.aspx" class="rmLink"><span class="rmText">Personal Financial Planning&nbsp;</span></a></li>
@@ -186,10 +198,10 @@
                         </div>
                      </li>
                      <li class="rmItem rmSeparator"><span class="rmText"></span></li>
-                     <li class="rmItem "><a href="/Events/" class="rmLink"><span class="rmText">Events&nbsp;</span></a></li>
+                     <li class="rmItem "><a href="<?php echo get_permalink( get_page_by_path( 'events' ) ); ?>" class="rmLink"><span class="rmText">Events&nbsp;</span></a></li>
                      <li class="rmItem rmSeparator"><span class="rmText"></span></li>
                      <li class="rmItem ">
-                        <a href="/Client-Center.aspx" class="rmLink"><span class="rmText">Client Center&nbsp;</span></a>
+                        <a href="<?php echo get_permalink( get_page_by_path( 'client-center' ) ); ?>" class="rmLink"><span class="rmText">Client Center&nbsp;</span></a>
                         <div class="rmSlide">
                            <ul class="rmVertical rmGroup rmLevel1">
                               <li class="rmItem rmFirst"><a href="/Client-Center.aspx" class="rmLink" target="_blank"><span class="rmText">Client Center&nbsp;</span></a></li>
@@ -198,10 +210,10 @@
                         </div>
                      </li>
                      <li class="rmItem rmSeparator"><span class="rmText"></span></li>
-                     <li class="rmItem "><a href="/Newsletter.aspx" class="rmLink"><span class="rmText">Newsletter&nbsp;</span></a></li>
+                     <li class="rmItem "><a href="<?php echo get_permalink( get_page_by_path( 'newsletter' ) ); ?>" class="rmLink"><span class="rmText">Newsletter&nbsp;</span></a></li>
                      <li class="rmItem rmSeparator"><span class="rmText"></span></li>
                      <li class="rmItem rmLast">
-                        <a href="/Contact-Us.aspx" class="rmLink"><span class="rmText">Contact Us&nbsp;</span></a>
+                        <a href="<?php echo get_permalink( get_page_by_path( 'contact-us' ) ); ?>" class="rmLink"><span class="rmText">Contact Us&nbsp;</span></a>
                         <div class="rmSlide">
                            <ul class="rmVertical rmGroup rmLevel1">
                               <li class="rmItem rmFirst rmLast"><a href="/Contact-Us/Directions.aspx" class="rmLink"><span class="rmText">Directions&nbsp;</span></a></li>
