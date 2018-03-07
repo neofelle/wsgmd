@@ -7,7 +7,7 @@
     position:relative;
 }
 
-.RadMenu .rmRootGroup
+.RadMenu .rmRootGroup, div.my_extra_menu_class > ul
 {
     margin:0;
     padding:0;
@@ -16,10 +16,10 @@
     display: inline-block;
 }
 
-* html .RadMenu .rmRootGroup { float: left; }
+* html .RadMenu .rmRootGroup, div.my_extra_menu_class > ul { float: left; }
 
 .RadMenu:after,
-.RadMenu .rmRootGroup:after
+.RadMenu .rmRootGroup:after, div.my_extra_menu_class > ul:after
 {
     content:""; 
     display:block;
@@ -33,7 +33,8 @@
 
 .RadMenu ul.rmVertical,
 .rmRootGroup ul.rmHorizontal,
-.RadMenu_Context ul.rmHorizontal
+.RadMenu_Context ul.rmHorizontal,
+div.my_extra_menu_class > ul
 {
     margin:0;
     padding:0;
@@ -48,17 +49,17 @@
     width: 100%;
 }
 
-.rmSized ul.rmRootGroup
+.rmSized ul.rmRootGroup, div.my_extra_menu_class > ul
 {
     float: none;
 }
 
-.rmSized .rmRootGroup .rmVertical
+.rmSized .rmRootGroup .rmVertical, div.my_extra_menu_class > ul
 {
     width: auto;
 }
 
-.RadMenu .rmItem
+.RadMenu .rmItem, div.my_extra_menu_class > ul > li
 {
     float:left;
     position:relative;
@@ -67,34 +68,34 @@
     list-style:none;    
 }
 
-* html .RadMenu .rmItem
+* html .RadMenu .rmItem, div.my_extra_menu_class > ul > li
 {
     display:inline;
 }
 
-.RadMenu .rmHorizontal .rmItem
+.RadMenu .rmHorizontal .rmItem, div.my_extra_menu_class > ul > li
 {
     clear:none;
 }
 
-.RadMenu .rmVertical .rmItem
+.RadMenu .rmVertical .rmItem, div.my_extra_menu_class > ul > li
 {
     clear:both;
 }
 
-.rmSized .rmVertical .rmItem
+.rmSized .rmVertical .rmItem, div.my_extra_menu_class > ul > li
 {
     width: 100%;
 }
 
 .rmSized .rmHorizontal .rmItem,
-.rmSized .rmRootGroup .rmVertical .rmItem
+.rmSized .rmRootGroup .rmVertical .rmItem, div.my_extra_menu_class > ul > li
 {
     width: auto;
 }
 
 .RadMenu ul.rmActive,
-.RadMenu ul.rmRootGroup
+.RadMenu ul.rmRootGroup, div.my_extra_menu_class > ul
 {
     display:block;
 }
@@ -193,7 +194,7 @@
     float:right;
 }
 
-.RadMenu_rtl .rmItem
+.RadMenu_rtl .rmItem, div.my_extra_menu_class > ul > li
 {
     float:right;    
 }
@@ -236,7 +237,7 @@
 }
 /* <base styles> */
 
-.RadMenu .rmItem
+.RadMenu .rmItem, div.my_extra_menu_class > ul > li
 {
     padding: 0;
 }
@@ -271,7 +272,7 @@
     padding: 0 15px 1px 0;
 }
 
-.RadMenu .rmHorizontal .rmText
+.RadMenu .rmHorizontal .rmText, div.my_extra_menu_class > ul
 {
     padding: 0 12px 1px 0;
 }
@@ -282,20 +283,20 @@
 }
 
 .RadMenu .rmVertical .rmText,
-.RadMenu .rmHorizontal .rmVertical .rmText
+.RadMenu .rmHorizontal .rmVertical .rmText, div.my_extra_menu_class > ul
 {
     display: block;
     float: none;
 }
 
 .RadMenu .rmVertical .rmLink,
-.RadMenu .rmHorizontal .rmVertical .rmLink
+.RadMenu .rmHorizontal .rmVertical .rmLink, div.my_extra_menu_class > ul
 {
     float: none;
 }
 
 * html .RadMenu .rmGroup .rmVertical .rmLink,
-* html .RadMenu .rmGroup .rmHorizontal .rmLink
+* html .RadMenu .rmGroup .rmHorizontal .rmLink, div.my_extra_menu_class > ul
 {
     float: left;
 }
@@ -536,7 +537,7 @@
 
 /* </Shadows and rounded corners */
 
-.RadMenu .rmRootGroup .rmItem .rmGroup
+.RadMenu .rmRootGroup .rmItem .rmGroup, div.my_extra_menu_class > ul
 {
     padding-bottom: 1px;
 }
@@ -605,7 +606,7 @@
     padding: 0 28px 0 54px;
 }
 
-.RadMenu .rmSlide .rmHorizontal .rmText
+.RadMenu .rmSlide .rmHorizontal .rmText, div.my_extra_menu_class > ul
 {
     padding: 0 11px 0 10px;
 }
@@ -668,13 +669,13 @@
 }
 
 .RadMenu .rmRootGroup .rmVertical .rmSeparator .rmText,
-.RadMenu_Context .rmVertical .rmSeparator .rmText
+.RadMenu_Context .rmVertical .rmSeparator .rmText,div.my_extra_menu_class > ul
 {
     margin: 1px 2px 1px 31px;
 }
 
 .RadMenu_rtl .rmRootGroup .rmVertical .rmSeparator .rmText,
-.RadMenu_Context_rtl .rmVertical .rmSeparator .rmText
+.RadMenu_Context_rtl .rmVertical .rmSeparator .rmText, div.my_extra_menu_class > ul
 {
     margin: 1px 31px 1px 2px;
 }

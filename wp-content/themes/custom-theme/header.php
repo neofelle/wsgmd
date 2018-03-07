@@ -156,71 +156,8 @@
                     'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                     'walker'    => new wp_bootstrap_navwalker()
                    );
-                   //wp_nav_menu($menu_args);
+                   wp_nav_menu($menu_args);
                   ?>
-                  <ul class="rmHorizontal rmRootGroup">
-                     <li class="rmItem rmFirst">
-                        <a href="<?php echo get_permalink( get_page_by_path( 'home' ) ); ?>" class="rmLink"><span class="rmText">Home&nbsp;</span></a>
-                     </li>
-                     <li class="rmItem rmSeparator">
-                        <span class="rmText"></span>
-                     </li>
-                     <li class="rmItem ">
-                        <a href="<?php echo get_permalink( get_page_by_path( 'about-us' ) ); ?>" class="rmLink"><span class="rmText">About Us&nbsp;</span></a>
-                        <div class="rmSlide">
-                           <ul class="rmVertical rmGroup rmLevel1">
-                              <li class="rmItem rmFirst"><a href="/About-Us/Our-Team.aspx" class="rmLink"><span class="rmText">Our Team&nbsp;</span></a></li>
-                              <li class="rmItem "><a href="/About-Us/Advisory-Group.aspx" class="rmLink"><span class="rmText">Advisory Group&nbsp;</span></a></li>
-                              <li class="rmItem "><a href="/About-Us/Dynamic-Advisor-Network.aspx" class="rmLink"><span class="rmText">Dynamic Advisor Network&nbsp;</span></a></li>
-                              <li class="rmItem "><a href="/About-Us/Employment-Opportunities.aspx" class="rmLink"><span class="rmText">Employment Opportunities&nbsp;</span></a></li>
-                              <li class="rmItem "><a href="/About-Us/WSG-In-The-News.aspx" class="rmLink"><span class="rmText">WSG In The News&nbsp;</span></a></li>
-                              <li class="rmItem rmLast"><a href="/About-Us/Our-Values.aspx" class="rmLink"><span class="rmText">Our Values&nbsp;</span></a></li>
-                           </ul>
-                        </div>
-                     </li>
-                     <li class="rmItem rmSeparator"><span class="rmText"></span></li>
-                     <li class="rmItem ">
-                        <a href="<?php echo get_permalink( get_page_by_path( 'services' ) ); ?>" class="rmLink"><span class="rmText">Services&nbsp;</span></a>
-                        <div class="rmSlide">
-                           <ul class="rmVertical rmGroup rmLevel1">
-                              <li class="rmItem rmFirst"><a href="/Services/Personal-Financial-Planning.aspx" class="rmLink"><span class="rmText">Personal Financial Planning&nbsp;</span></a></li>
-                              <li class="rmItem "><a href="/Services/Business-Owners.aspx" class="rmLink"><span class="rmText">Business Owners&nbsp;</span></a></li>
-                              <li class="rmItem ">
-                                 <a href="/Services/Speaking.aspx" class="rmLink"><span class="rmText">Speaking&nbsp;</span></a>
-                                 <div class="rmSlide">
-                                    <ul class="rmVertical rmGroup rmLevel2">
-                                       <li class="rmItem rmFirst rmLast"><a href="/Speaking/Speaking-Engagements.aspx" class="rmLink"><span class="rmText">Speaking Engagements&nbsp;</span></a></li>
-                                    </ul>
-                                 </div>
-                              </li>
-                              <li class="rmItem rmLast"><a href="/Services/Services-for-Federal-Employees.aspx" class="rmLink"><span class="rmText">Services for Federal Employees&nbsp;</span></a></li>
-                           </ul>
-                        </div>
-                     </li>
-                     <li class="rmItem rmSeparator"><span class="rmText"></span></li>
-                     <li class="rmItem "><a href="<?php echo get_permalink( get_page_by_path( 'events' ) ); ?>" class="rmLink"><span class="rmText">Events&nbsp;</span></a></li>
-                     <li class="rmItem rmSeparator"><span class="rmText"></span></li>
-                     <li class="rmItem ">
-                        <a href="<?php echo get_permalink( get_page_by_path( 'client-center' ) ); ?>" class="rmLink"><span class="rmText">Client Center&nbsp;</span></a>
-                        <div class="rmSlide">
-                           <ul class="rmVertical rmGroup rmLevel1">
-                              <li class="rmItem rmFirst"><a href="/Client-Center.aspx" class="rmLink" target="_blank"><span class="rmText">Client Center&nbsp;</span></a></li>
-                              <li class="rmItem rmLast"><a href="/Client-Center/Client-Event-Pictures.aspx" class="rmLink"><span class="rmText">Client Event Pictures&nbsp;</span></a></li>
-                           </ul>
-                        </div>
-                     </li>
-                     <li class="rmItem rmSeparator"><span class="rmText"></span></li>
-                     <li class="rmItem "><a href="<?php echo get_permalink( get_page_by_path( 'newsletter' ) ); ?>" class="rmLink"><span class="rmText">Newsletter&nbsp;</span></a></li>
-                     <li class="rmItem rmSeparator"><span class="rmText"></span></li>
-                     <li class="rmItem rmLast">
-                        <a href="<?php echo get_permalink( get_page_by_path( 'contact-us' ) ); ?>" class="rmLink"><span class="rmText">Contact Us&nbsp;</span></a>
-                        <div class="rmSlide">
-                           <ul class="rmVertical rmGroup rmLevel1">
-                              <li class="rmItem rmFirst rmLast"><a href="/Contact-Us/Directions.aspx" class="rmLink"><span class="rmText">Directions&nbsp;</span></a></li>
-                           </ul>
-                        </div>
-                     </li>
-                  </ul>
                   <input id="RadMenu1_ClientState" name="RadMenu1_ClientState" type="hidden" />
                </div>
             </div>
