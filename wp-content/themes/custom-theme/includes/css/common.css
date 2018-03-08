@@ -7,7 +7,7 @@
     position:relative;
 }
 
-.RadMenu .rmRootGroup, div.my_extra_menu_class > ul
+.RadMenu .rmRootGroup
 {
     margin:0;
     padding:0;
@@ -16,10 +16,10 @@
     display: inline-block;
 }
 
-* html .RadMenu .rmRootGroup, div.my_extra_menu_class > ul { float: left; }
+* html .RadMenu .rmRootGroup { float: left; }
 
 .RadMenu:after,
-.RadMenu .rmRootGroup:after, div.my_extra_menu_class > ul:after
+.RadMenu .rmRootGroup:after
 {
     content:""; 
     display:block;
@@ -33,8 +33,7 @@
 
 .RadMenu ul.rmVertical,
 .rmRootGroup ul.rmHorizontal,
-.RadMenu_Context ul.rmHorizontal,
-div.my_extra_menu_class > ul
+.RadMenu_Context ul.rmHorizontal
 {
     margin:0;
     padding:0;
@@ -49,17 +48,17 @@ div.my_extra_menu_class > ul
     width: 100%;
 }
 
-.rmSized ul.rmRootGroup, div.my_extra_menu_class > ul
+.rmSized ul.rmRootGroup
 {
     float: none;
 }
 
-.rmSized .rmRootGroup .rmVertical, div.my_extra_menu_class > ul
+.rmSized .rmRootGroup .rmVertical
 {
     width: auto;
 }
 
-.RadMenu .rmItem, div.my_extra_menu_class > ul > li
+.RadMenu .rmItem
 {
     float:left;
     position:relative;
@@ -68,34 +67,34 @@ div.my_extra_menu_class > ul
     list-style:none;    
 }
 
-* html .RadMenu .rmItem, div.my_extra_menu_class > ul > li
+* html .RadMenu .rmItem
 {
     display:inline;
 }
 
-.RadMenu .rmHorizontal .rmItem, div.my_extra_menu_class > ul > li
+.RadMenu .rmHorizontal .rmItem
 {
     clear:none;
 }
 
-.RadMenu .rmVertical .rmItem, div.my_extra_menu_class > ul > li
+.RadMenu .rmVertical .rmItem
 {
     clear:both;
 }
 
-.rmSized .rmVertical .rmItem, div.my_extra_menu_class > ul > li
+.rmSized .rmVertical .rmItem
 {
     width: 100%;
 }
 
 .rmSized .rmHorizontal .rmItem,
-.rmSized .rmRootGroup .rmVertical .rmItem, div.my_extra_menu_class > ul > li
+.rmSized .rmRootGroup .rmVertical .rmItem
 {
     width: auto;
 }
 
 .RadMenu ul.rmActive,
-.RadMenu ul.rmRootGroup, div.my_extra_menu_class > ul
+.RadMenu ul.rmRootGroup
 {
     display:block;
 }
@@ -194,7 +193,7 @@ div.my_extra_menu_class > ul
     float:right;
 }
 
-.RadMenu_rtl .rmItem, div.my_extra_menu_class > ul > li
+.RadMenu_rtl .rmItem
 {
     float:right;    
 }
@@ -237,7 +236,7 @@ div.my_extra_menu_class > ul
 }
 /* <base styles> */
 
-.RadMenu .rmItem, div.my_extra_menu_class > ul > li
+.RadMenu .rmItem
 {
     padding: 0;
 }
@@ -272,7 +271,7 @@ div.my_extra_menu_class > ul
     padding: 0 15px 1px 0;
 }
 
-.RadMenu .rmHorizontal .rmText, div.my_extra_menu_class > ul
+.RadMenu .rmHorizontal .rmText
 {
     padding: 0 12px 1px 0;
 }
@@ -283,20 +282,20 @@ div.my_extra_menu_class > ul
 }
 
 .RadMenu .rmVertical .rmText,
-.RadMenu .rmHorizontal .rmVertical .rmText, div.my_extra_menu_class > ul
+.RadMenu .rmHorizontal .rmVertical .rmText
 {
     display: block;
     float: none;
 }
 
 .RadMenu .rmVertical .rmLink,
-.RadMenu .rmHorizontal .rmVertical .rmLink, div.my_extra_menu_class > ul
+.RadMenu .rmHorizontal .rmVertical .rmLink
 {
     float: none;
 }
 
 * html .RadMenu .rmGroup .rmVertical .rmLink,
-* html .RadMenu .rmGroup .rmHorizontal .rmLink, div.my_extra_menu_class > ul
+* html .RadMenu .rmGroup .rmHorizontal .rmLink
 {
     float: left;
 }
@@ -537,7 +536,7 @@ div.my_extra_menu_class > ul
 
 /* </Shadows and rounded corners */
 
-.RadMenu .rmRootGroup .rmItem .rmGroup, div.my_extra_menu_class > ul
+.RadMenu .rmRootGroup .rmItem .rmGroup
 {
     padding-bottom: 1px;
 }
@@ -606,7 +605,7 @@ div.my_extra_menu_class > ul
     padding: 0 28px 0 54px;
 }
 
-.RadMenu .rmSlide .rmHorizontal .rmText, div.my_extra_menu_class > ul
+.RadMenu .rmSlide .rmHorizontal .rmText
 {
     padding: 0 11px 0 10px;
 }
@@ -669,13 +668,13 @@ div.my_extra_menu_class > ul
 }
 
 .RadMenu .rmRootGroup .rmVertical .rmSeparator .rmText,
-.RadMenu_Context .rmVertical .rmSeparator .rmText,div.my_extra_menu_class > ul
+.RadMenu_Context .rmVertical .rmSeparator .rmText
 {
     margin: 1px 2px 1px 31px;
 }
 
 .RadMenu_rtl .rmRootGroup .rmVertical .rmSeparator .rmText,
-.RadMenu_Context_rtl .rmVertical .rmSeparator .rmText, div.my_extra_menu_class > ul
+.RadMenu_Context_rtl .rmVertical .rmSeparator .rmText
 {
     margin: 1px 31px 1px 2px;
 }

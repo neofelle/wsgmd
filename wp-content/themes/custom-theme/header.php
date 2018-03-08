@@ -150,7 +150,7 @@
                    $menu_args = array(
                     'menu'    => 'MAIN-MENU',
                     'theme_location' => 'my-menu',
-                    'depth'    => 4,
+                    'depth'    => 20,
                     'container'   => false,
                     'menu_class'   => 'rmHorizontal rmRootGroup',
                     'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',

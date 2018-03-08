@@ -28,5 +28,6 @@ Template Name: Custom
                         endif;
                     endwhile; // End of the loop.
                 ?>
+                <br style="clear:both;"/>
             </div>
 <?php get_footer(); ?>
