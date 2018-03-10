@@ -60,14 +60,14 @@
       <script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/includes/js/jquery.min.1.7.2.js'></script>
       <script type='text/javascript' src='<?php bloginfo('template_directory'); ?>/includes/js/jquery-ui.min.js'></script>
       <script type="text/JavaScript">
-         $(document).ready(function () {
+        /* $(document).ready(function () {
              $('#scrollerContainer1').DOPThumbnailScroller({
                  'SettingsDataType': 'XML',
                  'SettingsFilePath': 'DOPThumbnailScroller/xml/settings.xml',
                  'ContentDataType': 'XML',
                  'ContentFilePath': 'DOPThumbnailScroller/xml/content.xml'
              });
-         });
+         });*/
       </script>
       <style type="text/css">
          /*** set the width and height to match your images **/
@@ -150,10 +150,9 @@
                    $menu_args = array(
                     'menu'    => 'MAIN-MENU',
                     'theme_location' => 'my-menu',
-                    'depth'    => 20,
+                    'depth'    => 0,
                     'container'   => false,
-                    'menu_class'   => 'rmHorizontal rmRootGroup',
-                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                    'menu_class'   => 'rmHorizontal rmRootGroup',                    
                     'walker'    => new wp_bootstrap_navwalker()
                    );
                    wp_nav_menu($menu_args);
