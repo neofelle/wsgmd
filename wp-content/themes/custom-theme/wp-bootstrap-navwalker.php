@@ -92,7 +92,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
       }
       
       //$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';            
-      if( $item->ID == 307 ){
+      /*if( $item->ID == 307 ){
         $class_names = 'class="rmItem rmLast"';
       }elseif( $item->ID == 261 ){
         $class_names = 'class="rmItem rmFirst"';
@@ -102,7 +102,8 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
         }else{
           $class_names = 'class="rmItem"';
         }        
-      }
+      }*/
+      $class_names = 'class="rmItem"';
       
 
       $id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
